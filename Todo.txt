@@ -1,0 +1,25 @@
+Ideas
+[X]Crear amigos
+[X]Borrar amigos
+[X]Puntos para comentarios
+[X]Buscar usuarios
+[X]proposiciones publicas/privadas
+[X]Agregar status a My Ideas
+[X]No poder votar dos veces por un comentario
+[_]Cambiar ideas a proposal y comments a ideas
+[X]Busqueda de ideas
+[_]Decidir si Desplegar nombre de usuario
+[X]Feed de una idea
+[X]Feed de una idea por usuario
+[X]Follow idea
+[_]Comments Like
+[X]Listado de follow
+[X]CRUD grupos
+[_]Envio de correos
+[X]Dar de baja a los friends de grupos
+[X]Listado de ideas de amigos
+[X]Revisar condiciones de private, public y grupos
+[X]Convertir comentario a idea
+[X]Votos negativos
+[X]Listado de ideas debajo de comentarios
+[_]Revisar tags

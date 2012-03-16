@@ -1,0 +1,87 @@
+/*============ Ideas ============*/
+div.idea .details {
+	font-size: 80%; 	
+	text-align: right;
+	color: #8E8E8E; 
+}
+
+div.idea .content {	font-size: 120%;	}
+div.idea .content a {	color: #333;	text-decoration: none;	}
+div.idea .content a:hover {	text-decoration: underline;	}
+
+div.idea .info {
+	display: inline;
+}
+div.idea .info {
+	display: inline;
+}
+
+div.idea .title {
+	float: right;
+}
+
+/*============ New Ideas ============*/
+#new-idea {
+	color: green;
+}
+#new-idea .idea textarea {
+	width: 670px;
+	height: 90px;
+}
+
+/*============ Tags & groups ============*/
+ul.tags {
+	height: 16px;
+	float: right;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+ul.tags li {
+	float: left;
+	line-height: 16px;
+	list-style-type: none;
+	margin-left: 2px;
+	 
+}
+ul.tags li a {
+	border: solid 1px #CCC;
+	color: #767676;
+	background-color: #E6E6E6;
+	padding: 2px 5px;
+	font-size: 80%; 
+}
+ul.tags li a:hover {
+	background-color: #C5C5C5;
+	color: #333;
+}
+
+div.groups {
+	clear: both;
+}
+div.groups h3 {
+	float: left;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0 5px 0 0;
+	line-height: 16px;
+}
+div.groups ul {
+	height: 16px;
+	margin: 0;
+	padding: 0;
+}
+div.groups ul li {
+	float: left;
+	line-height: 16px;
+	list-style-type: none;
+	margin-left: 2px;
+ 	font-size: 10px;
+}
+
+
+
+
+
+
+

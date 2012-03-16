@@ -1,0 +1,287 @@
+2011/07/30 17:07:38 [error] [system.db.CDbCommand] Error in preparing SQL: DELETE FROM YiiCache WHERE expire>0 AND expire<1312038458
+2011/07/30 17:07:38 [error] [system.db.CDbCommand] Error in executing SQL: DELETE FROM YiiCache WHERE expire>0 AND expire<1312038458
+2011/07/30 17:07:38 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\Users\jjchiw\Frameworks\wamp\www\12345\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CAssetManager.php:82
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CAssetManager.php(59): CAssetManager->setBasePath('C:\Users\jjchiw...')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CModule.php(363): CAssetManager->init()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(169): CModule->getComponent('assetManager')
+#3 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\zii\widgets\CListView.php(157): CWebApplication->getAssetManager()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CBaseController.php(148): CListView->init()
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#6 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\views\ideas\index.php(67): CBaseController->widget('zii.widgets.CLi...', Array)
+#7 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CBaseController.php(119): require('C:\Users\jjchiw...')
+#8 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('C:\Users\jjchiw...', Array, true)
+#9 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(748): CBaseController->renderFile('C:\Users\jjchiw...', Array, true)
+#10 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(687): CController->renderPartial('index', Array, true)
+#11 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\controllers\IdeasController.php(152): CController->render('index', Array)
+#12 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\actions\CInlineAction.php(32): IdeasController->actionIndex()
+#13 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(300): CInlineAction->run()
+#14 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\filters\CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#15 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(999): CFilter->filter(Object(CFilterChain))
+#17 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\filters\CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(283): CFilterChain->run()
+#20 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): CController->run('')
+#22 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('')
+#23 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#24 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#25 {main} REQUEST_URI=/12345/
+2011/09/18 16:25:02 [error] [php] require(C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\widgets\openidProviders\openidProviders.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory (C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\YiiBase.php:257)
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CBaseController.php(173): LoginController->createWidget()
+#1 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\views\user\login.php(8): LoginController->widget()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CBaseController.php(119): require()
+#3 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CBaseController.php(88): LoginController->renderInternal()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(748): LoginController->renderFile()
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(687): LoginController->renderPartial()
+#6 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php(25): LoginController->render()
+#7 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\actions\CInlineAction.php(32): LoginController->actionLogin()
+#8 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(300): CInlineAction->run()
+#9 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(278): LoginController->runAction()
+#10 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): LoginController->runActionWithFilters()
+#11 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): LoginController->run()
+#12 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController()
+#13 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#14 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CWebApplication->run()
+REQUEST_URI=/12345/user/login
+2011/09/18 16:35:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/authenticate".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('user/authentica...')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/user/authenticate?action=verify&openid_identifier=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid
+2011/09/18 16:36:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/authenticate".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('user/authentica...')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/user/authenticate?action=verify&openid_identifier=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid
+2011/09/18 16:40:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('user/login')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/user/login
+2011/09/18 16:40:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('user/login')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/user/login
+2011/09/18 16:47:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/authenticate".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('user/authentica...')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/user/authenticate?action=verify&openid_identifier=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid
+2011/09/18 16:51:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/authenticate".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('user/authentica...')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/user/authenticate?action=verify&openid_identifier=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid
+2011/09/18 16:53:39 [error] [php] require(C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\extensions\lightopenid\loid.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory (C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\YiiBase.php:257)
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CModule.php(362): createComponent()
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CModule.php(86): CWebApplication->getComponent()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php(38): CWebApplication->__get()
+#3 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php(26): LoginController->validate()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\actions\CInlineAction.php(32): LoginController->actionLogin()
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(300): CInlineAction->run()
+#6 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(278): LoginController->runAction()
+#7 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): LoginController->runActionWithFilters()
+#8 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): LoginController->run()
+#9 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController()
+#10 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#11 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CWebApplication->run()
+REQUEST_URI=/12345/user/login
+2011/09/18 16:54:21 [error] [php] require(C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\extensions\lightopenid\loid.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory (C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\YiiBase.php:257)
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CModule.php(362): createComponent()
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CModule.php(86): CWebApplication->getComponent()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php(38): CWebApplication->__get()
+#3 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php(26): LoginController->validate()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\actions\CInlineAction.php(32): LoginController->actionLogin()
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(300): CInlineAction->run()
+#6 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(278): LoginController->runAction()
+#7 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): LoginController->runActionWithFilters()
+#8 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): LoginController->run()
+#9 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController()
+#10 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#11 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CWebApplication->run()
+REQUEST_URI=/12345/user/login
+2011/09/18 16:55:18 [error] [php] require(C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\extensions\lightopenid\loid.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory (C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\YiiBase.php:257)
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CModule.php(362): createComponent()
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CModule.php(86): CWebApplication->getComponent()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php(38): CWebApplication->__get()
+#3 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php(26): LoginController->validate()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\actions\CInlineAction.php(32): LoginController->actionLogin()
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(300): CInlineAction->run()
+#6 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(278): LoginController->runAction()
+#7 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): LoginController->runActionWithFilters()
+#8 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): LoginController->run()
+#9 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController()
+#10 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#11 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CWebApplication->run()
+REQUEST_URI=/12345/user/login
+2011/09/18 16:55:19 [error] [php] require(C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\extensions\lightopenid\loid.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory (C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\YiiBase.php:257)
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CModule.php(362): createComponent()
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CModule.php(86): CWebApplication->getComponent()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php(38): CWebApplication->__get()
+#3 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php(26): LoginController->validate()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\actions\CInlineAction.php(32): LoginController->actionLogin()
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(300): CInlineAction->run()
+#6 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(278): LoginController->runAction()
+#7 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): LoginController->runActionWithFilters()
+#8 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): LoginController->run()
+#9 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController()
+#10 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#11 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CWebApplication->run()
+REQUEST_URI=/12345/user/login
+2011/09/18 16:56:40 [error] [php] Undefined index:  openid_identifier (C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php:53)
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(300): CInlineAction->run()
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(278): LoginController->runAction()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): LoginController->runActionWithFilters()
+#3 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): LoginController->run()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController()
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#6 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CWebApplication->run()
+REQUEST_URI=/12345/user/login
+2011/09/18 16:57:21 [error] [php] Undefined index:  openid_identifier (C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php:54)
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(300): CInlineAction->run()
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(278): LoginController->runAction()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): LoginController->runActionWithFilters()
+#3 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): LoginController->run()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController()
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#6 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CWebApplication->run()
+REQUEST_URI=/12345/user/login
+2011/09/18 16:57:24 [error] [php] Undefined index:  openid_identifier (C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php:54)
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(300): CInlineAction->run()
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(278): LoginController->runAction()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): LoginController->runActionWithFilters()
+#3 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): LoginController->run()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController()
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#6 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CWebApplication->run()
+REQUEST_URI=/12345/user/login
+2011/09/18 16:57:34 [error] [php] Undefined index:  openid_identifier (C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php:54)
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(300): CInlineAction->run()
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(278): LoginController->runAction()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): LoginController->runActionWithFilters()
+#3 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): LoginController->run()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController()
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#6 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CWebApplication->run()
+REQUEST_URI=/12345/user/login
+2011/09/18 16:57:35 [error] [php] Undefined index:  openid_identifier (C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\modules\user\controllers\LoginController.php:54)
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(300): CInlineAction->run()
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(278): LoginController->runAction()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): LoginController->runActionWithFilters()
+#3 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): LoginController->run()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController()
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#6 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CWebApplication->run()
+REQUEST_URI=/12345/user/login
+2011/09/18 16:58:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/authenticate".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('user/authentica...')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/user/authenticate?action=verify&openid_identifier=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid
+2011/09/18 18:47:49 [error] [system.db.CDbCommand] Error in querying SQL: SELECT * FROM `users` `t` WHERE email=jjchiw@gmail.com
+2011/09/18 18:49:13 [error] [system.db.CDbCommand] Error in querying SQL: SELECT * FROM `users` `t` WHERE email=jjchiw@gmail.com
+2011/09/18 18:49:35 [error] [system.db.CDbCommand] Error in querying SQL: SELECT * FROM `users` `t` WHERE email=jjchiw@gmail.com
+2011/09/20 01:30:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/p".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('user/p')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/user/p
+2012/03/05 18:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/authenticate".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('user/authentica...')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/user/authenticate?action=verify&openid_identifier=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid
+2012/03/05 19:03:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "new".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php:439
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(262): CController->missingAction('new')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): CController->run('new')
+#2 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('ideas/new')
+#3 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/12345/ideas/new
+2012/03/05 19:03:47 [error] [system.db.CDbCommand] Error in executing SQL: INSERT INTO `ideas` (`idea`, `description`, `is_public`, `tags`, `update_time`, `create_time`, `status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2012/03/05 19:03:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1452 Cannot add or update a child row: a foreign key constraint fails (`idea`.`ideas`, CONSTRAINT `FK_ideas_1` FOREIGN KEY (`author_id`) REFERENCES `users` (`id`))' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\db\CDbCommand.php:227
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\db\ar\CActiveRecord.php(954): CDbCommand->execute()
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\db\ar\CActiveRecord.php(713): CActiveRecord->insert(NULL)
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\protected\controllers\IdeasController.php(78): CActiveRecord->save()
+#3 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\actions\CInlineAction.php(32): IdeasController->actionCreate()
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(300): CInlineAction->run()
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\filters\CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(999): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\filters\CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(283): CFilterChain->run()
+#11 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): CController->run('create')
+#13 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('ideas/create')
+#14 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#15 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#16 {main} REQUEST_URI=/12345/ideas/create
+2012/03/05 19:15:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('users')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/users
+2012/03/05 19:16:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/list".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('user/list')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/user/list
+2012/03/05 19:16:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/index".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('user/index')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/user/index
+2012/03/05 19:19:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/index".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('user/index')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/user/index
+2012/03/05 19:25:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:153
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(115): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(999): CFilter->filter(Object(CFilterChain))
+#3 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\filters\CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(283): CFilterChain->run()
+#6 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(320): CController->run('create')
+#8 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('ideas/create')
+#9 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#10 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#11 {main} REQUEST_URI=/12345/idea/create
+2012/03/05 19:26:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php:324
+Stack trace:
+#0 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\web\CWebApplication.php(120): CWebApplication->runController('index')
+#1 C:\Users\jjchiw\Frameworks\wamp\www\yii\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 C:\Users\jjchiw\Frameworks\wamp\www\12345\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/12345/index
